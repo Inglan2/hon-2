@@ -1,0 +1,1206 @@
+{
+    "entity": {
+        "sensor": {
+            "washing_modes": {
+                "state": {
+                    "ready": "מוּכָן",
+                    "running": "התוכנית פועלת",
+                    "pause": "הַפסָקָה",
+                    "scheduled": "מתוזמן",
+                    "error": "שְׁגִיאָה",
+                    "test": "Test",
+                    "ending": "Stopping cycle…"
+                }
+            },
+            "mach_modes_ac": {
+                "state": {
+                    "auto": "Auto",
+                    "cool": "Cool",
+                    "dry": "Dry",
+                    "heat": "Heat",
+                    "fan": "Fan"
+                }
+            },
+            "program_phases_wm": {
+                "state": {
+                    "ready": "מוּכָן",
+                    "spin": "Spin",
+                    "rinse": "לִשְׁטוֹף",
+                    "drying": "יִבּוּשׁ",
+                    "steam": "קִיטוֹר",
+                    "weighting": "Weighing",
+                    "scheduled": "מתוזמן",
+                    "tumbling": "שמור על טריות",
+                    "refresh": "Refresh",
+                    "heating": "Heating",
+                    "washing": "לִשְׁטוֹף"
+                },
+                "name": "שלב"
+            },
+            "program_phases_td": {
+                "state": {
+                    "ready": "מוּכָן",
+                    "heat_stroke": "Drying",
+                    "drying": "יִבּוּשׁ",
+                    "cooldown": "Cooldown",
+                    "unknown": "unknown",
+                    "tumbling": "Keep Fresh"
+                },
+                "name": "שלב"
+            },
+            "program_phases_dw": {
+                "state": {
+                    "ready": "מוּכָן",
+                    "prewash": "Prewash",
+                    "washing": "לִשְׁטוֹף",
+                    "rinse": "לִשְׁטוֹף",
+                    "drying": "יִבּוּשׁ",
+                    "hot_rinse": "Hot rinse"
+                },
+                "name": "שלב"
+            },
+            "dry_levels": {
+                "state": {
+                    "no_dry": "ללא ייבוש",
+                    "iron_dry": "בַּרזֶל",
+                    "no_dry_iron": "לא לייבש ברזל",
+                    "cupboard_dry": "ארון יבש",
+                    "extra_dry": "יבש במיוחד",
+                    "ready_to_wear": "Ready to wear"
+                },
+                "name": "רמת ייבוש"
+            },
+            "programs_ac": {
+                "state": {
+                    "iot_simple_start": "התחל עכשיו"
+                },
+                "name": "Program"
+            },
+            "programs_dw": {
+                "state": {
+                    "eco_voice": "Eco",
+                    "gentle_wash": "Gentle wash",
+                    "iot_checkup": "בְּדִיקָה",
+                    "iot_dreft_quick_cycle": "Dreft Quick",
+                    "iot_fairy_quick_cycle": "Fairy Quick",
+                    "iot_jar_quick_cycle": "Jar Quick",
+                    "iot_yes_quick_cycle": "Yes Quick",
+                    "smart_ai": "Smart AI",
+                    "smart_ai_soil": "Smart AI",
+                    "zone_wash": "Flex Zone Wash"
+                },
+                "name": "Program"
+            },
+            "programs_ih": {
+                "state": {
+                    "iot_special_grilled_vegetables": "Grilled vegetables"
+                },
+                "name": "Program"
+            },
+            "programs_ov": {
+                "state": {
+                    "iot_h20_clean": "h2O clean",
+                    "pizza": "Pizza",
+                    "tailor_bake": "Tailor bake"
+                },
+                "name": "Program"
+            },
+            "programs_td": {
+                "state": {
+                    "genius": "Genius",
+                    "hqd_bath_towel": "Bath towel",
+                    "hqd_bulky": "Bulky",
+                    "hqd_cold_wind_30": "Cold wind 30 minutes",
+                    "hqd_cold_wind_timing": "Cold wind",
+                    "hqd_luxury": "Luxury",
+                    "hqd_night_dry": "Night dry",
+                    "hqd_refresh": "Refresh",
+                    "hqd_timer": "תוזמן",
+                    "hqd_warm_up": "Warm up",
+                    "hqd_working_suit": "Working suit",
+                    "iot_dry_synthetic_dry": "סינתטי יבש"
+                },
+                "name": "Program"
+            },
+            "programs_wm": {
+                "state": {
+                    "20_degrees_new_energy_label": "20 מעלות צלזיוס",
+                    "allergy_care": "טיפול באלרגיה",
+                    "allergy_care_pro": "Allergy Care Pro",
+                    "all_in_one_49": "All in One 49 '",
+                    "all_in_one_59": "All in One 59 '",
+                    "all_in_one_59_steam": "All in One 59 '",
+                    "autocare": "טיפול אוטומטי",
+                    "autoclean": "ניקוי אוטומטי",
+                    "baby_60": "BABY_60",
+                    "care_14": "טיפול מהיר 14 '",
+                    "care_30": "טיפול מהיר 30 '",
+                    "care_44": "טיפול מהיר 44 '",
+                    "checkup": "בְּדִיקָה",
+                    "cottons": "כותנה",
+                    "cottons_prewash": "כותנה + כביסה מוקדמת",
+                    "cotton_care_59": "Cotton Care 59 Min",
+                    "delicate_59": "עדין 59 '",
+                    "delicati_59": "DELICATI_59",
+                    "delicati_59_steam": "DELICATI_59",
+                    "drain_spin": "ניקוז + סיבוב",
+                    "eco_40_60_new_energy_label": "אקו 40-60",
+                    "extra_care": "אכפתיות מוגברת",
+                    "fitness": "טיפול בכושר",
+                    "fitness_care": "טיפול בכושר",
+                    "fresh_care_steam": "טיפול טרי",
+                    "high_dry": "יבש בחום גבוה",
+                    "hqd_dry_synthetics": "יבש בחום נמוך",
+                    "hygiene_60": "היגיינה 60 מעלות צלזיוס",
+                    "intensive_40": "40°C אינטנסיביים",
+                    "iot_allergy_care_pro": "Allergy Care Pro",
+                    "iot_all_in_one_59_steam": "All in One 59 '",
+                    "iot_baby_60_steam": "All Baby 60°C + Steam",
+                    "iot_checkup": "בְּדִיקָה",
+                    "iot_delicati_59_steam": "DELICATI_59",
+                    "iot_dry_air_refresh": "רענון אוויר",
+                    "iot_dry_anti_mites": "נגד קרדית",
+                    "iot_dry_baby": "תִינוֹק",
+                    "iot_dry_backpacks": "תיקי גב",
+                    "iot_dry_bathrobe": "חלוקי רחצה",
+                    "iot_dry_bed_linen": "מצעים",
+                    "iot_dry_cotton_dry": "כותנה יבשה",
+                    "iot_dry_cuddly_toys": "צעצועי חיבוק",
+                    "iot_dry_curtains": "וילונות",
+                    "iot_dry_dehumidifier": "מסיר לחות",
+                    "iot_dry_delicates_antiallergy": "עדין נגד אלרגיה",
+                    "iot_dry_delicate_tablecloths": "מפות עדינות",
+                    "iot_dry_denim_jeans": "ג'ינס",
+                    "iot_dry_easy_iron_cotton": "ברזל קל - כותנה",
+                    "iot_dry_easy_iron_synthetics": "קל ברזל - סינתטיים",
+                    "iot_dry_gym_fit": "כושר כושר - כושר",
+                    "iot_dry_lingerie": "לִבנֵי נָשִׁים",
+                    "iot_dry_mixed_dry": "מעורבב יבש",
+                    "iot_dry_rapid_60_min_delicates": "מהיר 60 '- עדינים",
+                    "iot_dry_shirts": "חולצות",
+                    "iot_dry_swimsuits_and_bikinis": "בגדי ים וביקיני",
+                    "iot_dry_synthetics": "סינתטי יבש",
+                    "iot_dry_synthetic_dry": "סינתטי יבש",
+                    "iot_dry_tablecloths": "מפות שולחן",
+                    "iot_dry_technical_fabrics": "בדים טכניים",
+                    "iot_dry_warm_embrace": "חיבוק חם",
+                    "iot_dry_wool_dry": "צמר יבש",
+                    "iot_fresh_care_steam": "טיפול טרי",
+                    "iot_synthetic_and_coloured_steam": "סינטטי וצבעוני",
+                    "iot_wash_anti_mites": "נגד קרדית",
+                    "iot_wash_anti_odor": "נגד ריח",
+                    "iot_wash_ariel_clean_cycle": "Ariel Ultimate Clean",
+                    "iot_wash_ariel_cold_cycle": "Ariel Cold Clean",
+                    "iot_wash_ariel_fresh_cycle": "Ariel Fresh Clean",
+                    "iot_wash_baby_sanitizer": "חיטוי לתינוקות",
+                    "iot_wash_backpacks": "תיקי גב",
+                    "iot_wash_bathrobe": "חלוקי רחצה ובדים נקבוביים",
+                    "iot_wash_bed_linen": "מצעים",
+                    "iot_wash_bed_linen_zelig": "מצעים",
+                    "iot_wash_bleaching": "הַלבָּנָה",
+                    "iot_wash_blood_stains": "כתמי דם",
+                    "iot_wash_cashmere": "קשמיר",
+                    "iot_wash_chocolate_stains": "כתמי שוקולד",
+                    "iot_wash_cold_wash": "שטיפה קרה",
+                    "iot_wash_colored": "צבעוני",
+                    "iot_wash_colored_anti_stain": "נגד כתם צבעוני",
+                    "iot_wash_colored_delicate": "צבעוני עדין",
+                    "iot_wash_coloured": "צבעוני",
+                    "iot_wash_cotton": "כותנה",
+                    "iot_wash_cuddly_toys": "צעצועי חיבוק",
+                    "iot_wash_curtains": "וילונות",
+                    "iot_wash_curtains_zelig": "וילונות",
+                    "iot_wash_dark": "אפל",
+                    "iot_wash_darks_and_coloured_44": "חביבים וצבעוניים 44 '",
+                    "iot_wash_darks_and_coloured_59": "חביבים וצבעוני 59 '",
+                    "iot_wash_darks_and_coloured_xl": "חפצים וצבע XL",
+                    "iot_wash_dash_clean_cycle": "Dash Ultimate Clean",
+                    "iot_wash_dash_cold_cycle": "Dash Cold Clean",
+                    "iot_wash_dash_fresh_cycle": "Dash Fresh Clean",
+                    "iot_wash_delicate": "עדינים",
+                    "iot_wash_delicate_antiallergy": "אנטי אלרגיה עדין",
+                    "iot_wash_delicate_antiallergy_zelig": "אנטי אלרגיה עדין",
+                    "iot_wash_delicate_colors": "צבעוני עדין",
+                    "iot_wash_delicate_dark": "כהה עדין",
+                    "iot_wash_delicate_tablecloths": "מפות עדינות",
+                    "iot_wash_delicate_whites": "לבנים עדינים",
+                    "iot_wash_denim_jeans": "ג'ינס",
+                    "iot_wash_diving_suits": "חליפות צלילה",
+                    "iot_wash_diving_suits_zelig": "חליפות צלילה",
+                    "iot_wash_down_jackets": "מעילי פוך",
+                    "iot_wash_down_jackets_zelig": "מעילי פוך",
+                    "iot_wash_fruit_stains": "כתמי פרי",
+                    "iot_wash_handwash": "שטיפת ידיים",
+                    "iot_wash_handwash_colored": "שטיפת ידיים בצבע",
+                    "iot_wash_handwash_dark": "שטיפת ידיים כהה",
+                    "iot_wash_lingerie": "לִבנֵי נָשִׁים",
+                    "iot_wash_masks_refresh": "מסכות רענן",
+                    "iot_wash_masks_sanification": "חיטוי מסכות",
+                    "iot_wash_mats": "מחצלות",
+                    "iot_wash_men_s_trousers": "מכנסי גברים",
+                    "iot_wash_mixed": "מעורב",
+                    "iot_wash_mix_and_coloured_44": "לערבב וצבעוני 44 '",
+                    "iot_wash_mix_and_coloured_59": "מיקס וצבעוני 59 '",
+                    "iot_wash_mix_and_coloured_xl": "מערבבים וצבעים XL",
+                    "iot_wash_new_clothes": "בגדים חדשים",
+                    "iot_wash_perfect_white": "לבן מושלם",
+                    "iot_wash_pets": "חיות מחמד",
+                    "iot_wash_pets_steam": "חיות מחמד",
+                    "iot_wash_playsuits": "חליפות משחק",
+                    "iot_wash_rapid_14": "מהיר 14 '",
+                    "iot_wash_rapid_30": "מהיר 30 '",
+                    "iot_wash_rapid_44": "מהיר 44 '",
+                    "iot_wash_rapid_59": "מהיר 59 '",
+                    "iot_wash_refresh_14_min": "רענן 14 דקות",
+                    "iot_wash_resistant_colored": "צבעוני עמיד",
+                    "iot_wash_resistant_dark": "כהה עמיד",
+                    "iot_wash_resistant_whites": "לבנים עמידים",
+                    "iot_wash_rinse": "לִשְׁטוֹף",
+                    "iot_wash_shirts": "חולצות",
+                    "iot_wash_silk": "משי",
+                    "iot_wash_ski_suit": "חליפת סקי",
+                    "iot_wash_ski_suit_zelig": "חליפת סקי",
+                    "iot_wash_spin": "סיבוב",
+                    "iot_wash_sport": "ספּוֹרט",
+                    "iot_wash_stains_remover": "מסיר כתמים",
+                    "iot_wash_swimsuits_and_bikinis": "בגדי ים וביקיני",
+                    "iot_wash_synthetic": "סינתטיים",
+                    "iot_wash_tablecloths": "מפות שולחן",
+                    "iot_wash_technical_fabrics": "בדים טכניים",
+                    "iot_wash_technical_fabrics_zelig": "בדים טכניים",
+                    "iot_wash_technical_jackets": "ז'קטים טכניים",
+                    "iot_wash_technical_jackets_zelig": "ז'קטים טכניים",
+                    "iot_wash_trainers": "מאמנים",
+                    "iot_wash_whites": "לְבָנִים",
+                    "iot_wash_whites_44": "לבנים 44 '",
+                    "iot_wash_whites_59": "לבנים 59 '",
+                    "iot_wash_whites_xl": "לבנים XL",
+                    "iot_wash_wine_stains": "כתמי יין",
+                    "iot_wash_wool": "צֶמֶר",
+                    "jeans": "גִ'ינס",
+                    "low_dry": "יבש בחום נמוך",
+                    "mixed_and_colored_59": "מעורב וצבעוני 59 '",
+                    "night_and_day": "לילה ויום",
+                    "night_wash": "Night Wash",
+                    "perfect_59": "מושלם 59 '",
+                    "perfect_whites_59": "לבן מושלם",
+                    "rapid_wash_and_dry_59_min": "לשטוף ולייבש 59 '",
+                    "resistant_cotton": "כותנה",
+                    "rinse": "לִשְׁטוֹף",
+                    "silent_night": "Night Wash",
+                    "soft_care": "טיפול רך",
+                    "special_49": "מיוחד 49 '",
+                    "sport_39": "ספורט 39 '",
+                    "sport_plus_29": "ספורט פלוס 29 \"",
+                    "steam_39": "קיטור 39 '",
+                    "steam_care_pro": "Steam Care Pro",
+                    "steam_care_pro_cotton": "Steam Care Pro",
+                    "synthetics": "סינתטיים",
+                    "synthetic_and_coloured": "סינטטי וצבעוני",
+                    "synthetic_and_coloured_steam": "סינטטי וצבעוני",
+                    "tailored_resistant_cotton": "Tailored Resistant Cotton",
+                    "tailored_synthetic_and_coloured": "Tailored Synthetic Colored",
+                    "total_care": "טיפול טוטאלי",
+                    "tumbling": "נופלים",
+                    "wool_and_delicates_49": "Wool/Delicates 49'",
+                    "wool_dry": "צמר יבש"
+                },
+                "name": "Program"
+            },
+            "programs_ref": {
+                "state": {
+                    "chiller": "Quick cool",
+                    "cold_drinks": "Soft chill",
+                    "cool_drink": "Cool Drink",
+                    "fruits": "Fruit",
+                    "fruit_and_veg": "Fruit & Veg",
+                    "keep_fresh": "0°C Fresh",
+                    "milk_and_eggs": "Milk & Eggs",
+                    "sea_food": "Ready to cook meal",
+                    "smart_mode_title": "Smart Mode",
+                    "soft_frozen": "Soft freezing",
+                    "tea": "Cold Drinks",
+                    "vegetables": "Vegetable",
+                    "zero_fresh": "0°C Fresh"
+                },
+                "name": "Program"
+            },
+            "programs_wc": {
+                "state": {}
+            },
+            "dry_time": {
+                "name": "זמן ייבוש"
+            },
+            "power": {
+                "name": "Power level"
+            },
+            "remaining_time": {
+                "name": "זמן שנותר"
+            },
+            "temperature": {
+                "name": "Temperature"
+            },
+            "water_efficiency": {
+                "name": "Water efficiency"
+            },
+            "water_saving": {
+                "name": "Water savings"
+            },
+            "duration": {
+                "name": "מֶשֶׁך"
+            },
+            "target_temperature": {
+                "name": "Target temperature"
+            },
+            "spin_speed": {
+                "name": "סיבוב"
+            },
+            "steam_leve": {
+                "name": "מפלס קיטור"
+            },
+            "dirt_level": {
+                "name": "רמת עפר",
+                "state": {
+                    "little": "קטן",
+                    "normal": "נוֹרמָלִי",
+                    "very": "מאוד",
+                    "unknown": "unknown"
+                }
+            },
+            "delay_time": {
+                "name": "Delay Start"
+            },
+            "suggested_load": {
+                "name": "יכולת עומס"
+            },
+            "energy_label": {
+                "name": "חסכון באנרגיה"
+            },
+            "det_dust": {
+                "name": "Powder detergent"
+            },
+            "det_liquid": {
+                "name": "Liquid detergent"
+            },
+            "errors": {
+                "name": "Error"
+            },
+            "programs": {
+                "name": "Current program"
+            },
+            "room_temperature": {
+                "name": "Room temperature"
+            },
+            "humidity": {
+                "name": "Humidity"
+            },
+            "cycles_total": {
+                "name": "מחזורים Total"
+            },
+            "energy_total": {
+                "name": "Energy Consumption Total"
+            },
+            "water_total": {
+                "name": "Water efficiency Total"
+            },
+            "energy_current": {
+                "name": "Energy Consumption Current"
+            },
+            "water_current": {
+                "name": "Water efficiency Current"
+            },
+            "freezer_temp": {
+                "name": "Freezer temperature"
+            },
+            "fridge_temp": {
+                "name": "Fridge temperature"
+            },
+            "voc": {
+                "name": "Gas (VOC)"
+            },
+            "steam_level": {
+                "state": {
+                    "no_steam": "אין קיטור",
+                    "cotton": "כותנה",
+                    "delicate": "עָדִין",
+                    "synthetic": "מְלָאכוּתִי"
+                },
+                "name": "מפלס קיטור"
+            },
+            "filter_cleaning": {
+                "name": "Filter cleaning"
+            },
+            "filter_life": {
+                "name": "Filter life"
+            },
+            "air_quality": {
+                "name": "Air Quality"
+            },
+            "fan_speed": {
+                "name": "Fan speed"
+            },
+            "humidity_level": {
+                "state": {
+                    "low": "נָמוּך",
+                    "mid": "בינוני",
+                    "high": "גָבוֹהַ"
+                },
+                "name": "Humidity level"
+            }
+        },
+        "select": {
+            "dry_levels": {
+                "state": {
+                    "no_dry": "ללא ייבוש",
+                    "iron_dry": "בַּרזֶל",
+                    "no_dry_iron": "לא לייבש ברזל",
+                    "cupboard_dry": "ארון יבש",
+                    "extra_dry": "יבש במיוחד",
+                    "ready_to_wear": "Ready to wear"
+                },
+                "name": "רמת ייבוש"
+            },
+            "eco_pilot": {
+                "state": {
+                    "touch_off": "Off",
+                    "avoid_touch": "Avoid touch",
+                    "follow_touch": "Follow",
+                    "unknown": "unknown"
+                },
+                "name": "Eco pilot"
+            },
+            "fan_mode": {
+                "state": {
+                    "high": "High",
+                    "mid": "Medium",
+                    "low": "Low",
+                    "auto": "Auto"
+                }
+            },
+            "ref_zones": {
+                "state": {
+                    "fridge": "Fridge",
+                    "freezer": "Freezer",
+                    "vtroom1": "My Zone",
+                    "fridge_freezer": "Fridge & Freezer"
+                },
+                "name": "Zone"
+            },
+            "programs_ac": {
+                "state": {
+                    "iot_simple_start": "התחל עכשיו"
+                },
+                "name": "Program"
+            },
+            "programs_dw": {
+                "state": {
+                    "eco_voice": "Eco",
+                    "gentle_wash": "Gentle wash",
+                    "iot_checkup": "בְּדִיקָה",
+                    "iot_dreft_quick_cycle": "Dreft Quick",
+                    "iot_fairy_quick_cycle": "Fairy Quick",
+                    "iot_jar_quick_cycle": "Jar Quick",
+                    "iot_yes_quick_cycle": "Yes Quick",
+                    "smart_ai": "Smart AI",
+                    "smart_ai_soil": "Smart AI",
+                    "zone_wash": "Flex Zone Wash"
+                },
+                "name": "Program"
+            },
+            "programs_ih": {
+                "state": {
+                    "iot_special_grilled_vegetables": "Grilled vegetables"
+                },
+                "name": "Program"
+            },
+            "programs_ov": {
+                "state": {
+                    "iot_h20_clean": "h2O clean",
+                    "pizza": "Pizza",
+                    "tailor_bake": "Tailor bake"
+                },
+                "name": "Program"
+            },
+            "programs_td": {
+                "state": {
+                    "genius": "Genius",
+                    "hqd_bath_towel": "Bath towel",
+                    "hqd_bulky": "Bulky",
+                    "hqd_cold_wind_30": "Cold wind 30 minutes",
+                    "hqd_cold_wind_timing": "Cold wind",
+                    "hqd_luxury": "Luxury",
+                    "hqd_night_dry": "Night dry",
+                    "hqd_refresh": "Refresh",
+                    "hqd_timer": "תוזמן",
+                    "hqd_warm_up": "Warm up",
+                    "hqd_working_suit": "Working suit",
+                    "iot_dry_synthetic_dry": "סינתטי יבש"
+                },
+                "name": "Program"
+            },
+            "programs_wm": {
+                "state": {
+                    "20_degrees_new_energy_label": "20 מעלות צלזיוס",
+                    "allergy_care": "טיפול באלרגיה",
+                    "allergy_care_pro": "Allergy Care Pro",
+                    "all_in_one_49": "All in One 49 '",
+                    "all_in_one_59": "All in One 59 '",
+                    "all_in_one_59_steam": "All in One 59 '",
+                    "autocare": "טיפול אוטומטי",
+                    "autoclean": "ניקוי אוטומטי",
+                    "baby_60": "BABY_60",
+                    "care_14": "טיפול מהיר 14 '",
+                    "care_30": "טיפול מהיר 30 '",
+                    "care_44": "טיפול מהיר 44 '",
+                    "checkup": "בְּדִיקָה",
+                    "cottons": "כותנה",
+                    "cottons_prewash": "כותנה + כביסה מוקדמת",
+                    "cotton_care_59": "Cotton Care 59 Min",
+                    "delicate_59": "עדין 59 '",
+                    "delicati_59": "DELICATI_59",
+                    "delicati_59_steam": "DELICATI_59",
+                    "drain_spin": "ניקוז + סיבוב",
+                    "eco_40_60_new_energy_label": "אקו 40-60",
+                    "extra_care": "אכפתיות מוגברת",
+                    "fitness": "טיפול בכושר",
+                    "fitness_care": "טיפול בכושר",
+                    "fresh_care_steam": "טיפול טרי",
+                    "high_dry": "יבש בחום גבוה",
+                    "hqd_dry_synthetics": "יבש בחום נמוך",
+                    "hygiene_60": "היגיינה 60 מעלות צלזיוס",
+                    "intensive_40": "40°C אינטנסיביים",
+                    "iot_allergy_care_pro": "Allergy Care Pro",
+                    "iot_all_in_one_59_steam": "All in One 59 '",
+                    "iot_baby_60_steam": "All Baby 60°C + Steam",
+                    "iot_checkup": "בְּדִיקָה",
+                    "iot_delicati_59_steam": "DELICATI_59",
+                    "iot_dry_air_refresh": "רענון אוויר",
+                    "iot_dry_anti_mites": "נגד קרדית",
+                    "iot_dry_baby": "תִינוֹק",
+                    "iot_dry_backpacks": "תיקי גב",
+                    "iot_dry_bathrobe": "חלוקי רחצה",
+                    "iot_dry_bed_linen": "מצעים",
+                    "iot_dry_cotton_dry": "כותנה יבשה",
+                    "iot_dry_cuddly_toys": "צעצועי חיבוק",
+                    "iot_dry_curtains": "וילונות",
+                    "iot_dry_dehumidifier": "מסיר לחות",
+                    "iot_dry_delicates_antiallergy": "עדין נגד אלרגיה",
+                    "iot_dry_delicate_tablecloths": "מפות עדינות",
+                    "iot_dry_denim_jeans": "ג'ינס",
+                    "iot_dry_easy_iron_cotton": "ברזל קל - כותנה",
+                    "iot_dry_easy_iron_synthetics": "קל ברזל - סינתטיים",
+                    "iot_dry_gym_fit": "כושר כושר - כושר",
+                    "iot_dry_lingerie": "לִבנֵי נָשִׁים",
+                    "iot_dry_mixed_dry": "מעורבב יבש",
+                    "iot_dry_rapid_60_min_delicates": "מהיר 60 '- עדינים",
+                    "iot_dry_shirts": "חולצות",
+                    "iot_dry_swimsuits_and_bikinis": "בגדי ים וביקיני",
+                    "iot_dry_synthetics": "סינתטי יבש",
+                    "iot_dry_synthetic_dry": "סינתטי יבש",
+                    "iot_dry_tablecloths": "מפות שולחן",
+                    "iot_dry_technical_fabrics": "בדים טכניים",
+                    "iot_dry_warm_embrace": "חיבוק חם",
+                    "iot_dry_wool_dry": "צמר יבש",
+                    "iot_fresh_care_steam": "טיפול טרי",
+                    "iot_synthetic_and_coloured_steam": "סינטטי וצבעוני",
+                    "iot_wash_anti_mites": "נגד קרדית",
+                    "iot_wash_anti_odor": "נגד ריח",
+                    "iot_wash_ariel_clean_cycle": "Ariel Ultimate Clean",
+                    "iot_wash_ariel_cold_cycle": "Ariel Cold Clean",
+                    "iot_wash_ariel_fresh_cycle": "Ariel Fresh Clean",
+                    "iot_wash_baby_sanitizer": "חיטוי לתינוקות",
+                    "iot_wash_backpacks": "תיקי גב",
+                    "iot_wash_bathrobe": "חלוקי רחצה ובדים נקבוביים",
+                    "iot_wash_bed_linen": "מצעים",
+                    "iot_wash_bed_linen_zelig": "מצעים",
+                    "iot_wash_bleaching": "הַלבָּנָה",
+                    "iot_wash_blood_stains": "כתמי דם",
+                    "iot_wash_cashmere": "קשמיר",
+                    "iot_wash_chocolate_stains": "כתמי שוקולד",
+                    "iot_wash_cold_wash": "שטיפה קרה",
+                    "iot_wash_colored": "צבעוני",
+                    "iot_wash_colored_anti_stain": "נגד כתם צבעוני",
+                    "iot_wash_colored_delicate": "צבעוני עדין",
+                    "iot_wash_coloured": "צבעוני",
+                    "iot_wash_cotton": "כותנה",
+                    "iot_wash_cuddly_toys": "צעצועי חיבוק",
+                    "iot_wash_curtains": "וילונות",
+                    "iot_wash_curtains_zelig": "וילונות",
+                    "iot_wash_dark": "אפל",
+                    "iot_wash_darks_and_coloured_44": "חביבים וצבעוניים 44 '",
+                    "iot_wash_darks_and_coloured_59": "חביבים וצבעוני 59 '",
+                    "iot_wash_darks_and_coloured_xl": "חפצים וצבע XL",
+                    "iot_wash_dash_clean_cycle": "Dash Ultimate Clean",
+                    "iot_wash_dash_cold_cycle": "Dash Cold Clean",
+                    "iot_wash_dash_fresh_cycle": "Dash Fresh Clean",
+                    "iot_wash_delicate": "עדינים",
+                    "iot_wash_delicate_antiallergy": "אנטי אלרגיה עדין",
+                    "iot_wash_delicate_antiallergy_zelig": "אנטי אלרגיה עדין",
+                    "iot_wash_delicate_colors": "צבעוני עדין",
+                    "iot_wash_delicate_dark": "כהה עדין",
+                    "iot_wash_delicate_tablecloths": "מפות עדינות",
+                    "iot_wash_delicate_whites": "לבנים עדינים",
+                    "iot_wash_denim_jeans": "ג'ינס",
+                    "iot_wash_diving_suits": "חליפות צלילה",
+                    "iot_wash_diving_suits_zelig": "חליפות צלילה",
+                    "iot_wash_down_jackets": "מעילי פוך",
+                    "iot_wash_down_jackets_zelig": "מעילי פוך",
+                    "iot_wash_fruit_stains": "כתמי פרי",
+                    "iot_wash_handwash": "שטיפת ידיים",
+                    "iot_wash_handwash_colored": "שטיפת ידיים בצבע",
+                    "iot_wash_handwash_dark": "שטיפת ידיים כהה",
+                    "iot_wash_lingerie": "לִבנֵי נָשִׁים",
+                    "iot_wash_masks_refresh": "מסכות רענן",
+                    "iot_wash_masks_sanification": "חיטוי מסכות",
+                    "iot_wash_mats": "מחצלות",
+                    "iot_wash_men_s_trousers": "מכנסי גברים",
+                    "iot_wash_mixed": "מעורב",
+                    "iot_wash_mix_and_coloured_44": "לערבב וצבעוני 44 '",
+                    "iot_wash_mix_and_coloured_59": "מיקס וצבעוני 59 '",
+                    "iot_wash_mix_and_coloured_xl": "מערבבים וצבעים XL",
+                    "iot_wash_new_clothes": "בגדים חדשים",
+                    "iot_wash_perfect_white": "לבן מושלם",
+                    "iot_wash_pets": "חיות מחמד",
+                    "iot_wash_pets_steam": "חיות מחמד",
+                    "iot_wash_playsuits": "חליפות משחק",
+                    "iot_wash_rapid_14": "מהיר 14 '",
+                    "iot_wash_rapid_30": "מהיר 30 '",
+                    "iot_wash_rapid_44": "מהיר 44 '",
+                    "iot_wash_rapid_59": "מהיר 59 '",
+                    "iot_wash_refresh_14_min": "רענן 14 דקות",
+                    "iot_wash_resistant_colored": "צבעוני עמיד",
+                    "iot_wash_resistant_dark": "כהה עמיד",
+                    "iot_wash_resistant_whites": "לבנים עמידים",
+                    "iot_wash_rinse": "לִשְׁטוֹף",
+                    "iot_wash_shirts": "חולצות",
+                    "iot_wash_silk": "משי",
+                    "iot_wash_ski_suit": "חליפת סקי",
+                    "iot_wash_ski_suit_zelig": "חליפת סקי",
+                    "iot_wash_spin": "סיבוב",
+                    "iot_wash_sport": "ספּוֹרט",
+                    "iot_wash_stains_remover": "מסיר כתמים",
+                    "iot_wash_swimsuits_and_bikinis": "בגדי ים וביקיני",
+                    "iot_wash_synthetic": "סינתטיים",
+                    "iot_wash_tablecloths": "מפות שולחן",
+                    "iot_wash_technical_fabrics": "בדים טכניים",
+                    "iot_wash_technical_fabrics_zelig": "בדים טכניים",
+                    "iot_wash_technical_jackets": "ז'קטים טכניים",
+                    "iot_wash_technical_jackets_zelig": "ז'קטים טכניים",
+                    "iot_wash_trainers": "מאמנים",
+                    "iot_wash_whites": "לְבָנִים",
+                    "iot_wash_whites_44": "לבנים 44 '",
+                    "iot_wash_whites_59": "לבנים 59 '",
+                    "iot_wash_whites_xl": "לבנים XL",
+                    "iot_wash_wine_stains": "כתמי יין",
+                    "iot_wash_wool": "צֶמֶר",
+                    "jeans": "גִ'ינס",
+                    "low_dry": "יבש בחום נמוך",
+                    "mixed_and_colored_59": "מעורב וצבעוני 59 '",
+                    "night_and_day": "לילה ויום",
+                    "night_wash": "Night Wash",
+                    "perfect_59": "מושלם 59 '",
+                    "perfect_whites_59": "לבן מושלם",
+                    "rapid_wash_and_dry_59_min": "לשטוף ולייבש 59 '",
+                    "resistant_cotton": "כותנה",
+                    "rinse": "לִשְׁטוֹף",
+                    "silent_night": "Night Wash",
+                    "soft_care": "טיפול רך",
+                    "special_49": "מיוחד 49 '",
+                    "sport_39": "ספורט 39 '",
+                    "sport_plus_29": "ספורט פלוס 29 \"",
+                    "steam_39": "קיטור 39 '",
+                    "steam_care_pro": "Steam Care Pro",
+                    "steam_care_pro_cotton": "Steam Care Pro",
+                    "synthetics": "סינתטיים",
+                    "synthetic_and_coloured": "סינטטי וצבעוני",
+                    "synthetic_and_coloured_steam": "סינטטי וצבעוני",
+                    "tailored_resistant_cotton": "Tailored Resistant Cotton",
+                    "tailored_synthetic_and_coloured": "Tailored Synthetic Colored",
+                    "total_care": "טיפול טוטאלי",
+                    "tumbling": "נופלים",
+                    "wool_and_delicates_49": "Wool/Delicates 49'",
+                    "wool_dry": "צמר יבש"
+                },
+                "name": "Program"
+            },
+            "programs_ref": {
+                "state": {
+                    "chiller": "Quick cool",
+                    "cold_drinks": "Soft chill",
+                    "cool_drink": "Cool Drink",
+                    "fruits": "Fruit",
+                    "fruit_and_veg": "Fruit & Veg",
+                    "keep_fresh": "0°C Fresh",
+                    "milk_and_eggs": "Milk & Eggs",
+                    "sea_food": "Ready to cook meal",
+                    "smart_mode_title": "Smart Mode",
+                    "soft_frozen": "Soft freezing",
+                    "tea": "Cold Drinks",
+                    "vegetables": "Vegetable",
+                    "zero_fresh": "0°C Fresh"
+                },
+                "name": "Program"
+            },
+            "dry_time": {
+                "name": "זמן ייבוש"
+            },
+            "spin_speed": {
+                "name": "סיבוב"
+            },
+            "temperature": {
+                "name": "Temperature"
+            },
+            "remaining_time": {
+                "name": "זמן שנותר"
+            },
+            "diffuser": {
+                "name": "Diffuser",
+                "state": {
+                    "soft": "Soft",
+                    "mid": "Mid",
+                    "h_biotics": "H-BIOTICS",
+                    "custom": "Customise",
+                    "off": "כבוי"
+                }
+            },
+            "mode": {
+                "name": "Mode",
+                "state": {
+                    "standby": "Standby",
+                    "sleep": "Sleep",
+                    "auto": "Auto",
+                    "allergens": "Allergens",
+                    "max": "Max"
+                }
+            },
+            "steam_level": {
+                "state": {
+                    "no_steam": "אין קיטור",
+                    "cotton": "כותנה",
+                    "delicate": "עָדִין",
+                    "synthetic": "מְלָאכוּתִי"
+                },
+                "name": "מפלס קיטור"
+            },
+            "dirt_level": {
+                "state": {
+                    "little": "קטן",
+                    "normal": "נוֹרמָלִי",
+                    "very": "מאוד",
+                    "unknown": "unknown"
+                },
+                "name": "רמת עפר"
+            },
+            "stain_type": {
+                "state": {
+                    "baby_food": "Baby food",
+                    "bean_paste": "Bean soup",
+                    "blood": "Blood",
+                    "blueberry": "Blueberry",
+                    "blue_ink": "Blue ink",
+                    "butter": "Butter",
+                    "chili_oil": "Chili oil",
+                    "chili_sauce": "Chili sauce",
+                    "chocolate": "שוקולד",
+                    "coffe": "Coffee",
+                    "coffee": "Coffee",
+                    "color_pencil": "Pencil",
+                    "cooking_oil": "Cooking oil",
+                    "curry": "Curry",
+                    "deodorant": "Deodorant",
+                    "egg": "Egg",
+                    "fruit": "פרי",
+                    "glue": "Glue",
+                    "grass": "Grass",
+                    "ice_cream": "Ice cream",
+                    "ketchup": "Ketchup",
+                    "lip_gloss": "Lip gloss",
+                    "mayonnaise": "Mayonnaise",
+                    "mech_grease": "Mech grease",
+                    "milk": "Milk",
+                    "milk_tea": "Milk tea",
+                    "oil": "Oil",
+                    "oil_pastel": "Oil pastel",
+                    "perfume": "Perfume",
+                    "rust": "Rust",
+                    "shoe_cream": "Shoe cream",
+                    "soil": "Soil",
+                    "soy_sauce": "רוטב סויה",
+                    "stain_level": "Stain level",
+                    "sweat": "Sweat",
+                    "tea": "תה",
+                    "wine": "Wine",
+                    "unknown": "unknown"
+                },
+                "name": "Stain level"
+            },
+            "fan_horizontal": {
+                "name": "Fan direction Horizontal",
+                "state": {
+                    "position_1": "Fixed - Position 1",
+                    "position_2": "Fixed - Position 2",
+                    "position_3": "Fixed - Position 3",
+                    "position_4": "Fixed - Position 4",
+                    "position_5": "Fixed - Position 5",
+                    "swing": "Swing"
+                }
+            },
+            "fan_vertical": {
+                "name": "Fan direction Vertical",
+                "state": {
+                    "position_1": "Fixed - Position 1",
+                    "position_2": "Fixed - Position 2",
+                    "position_3": "Fixed - Position 3",
+                    "position_4": "Fixed - Position 4",
+                    "position_5": "Fixed - Position 5",
+                    "swing": "Swing"
+                }
+            }
+        },
+        "switch": {
+            "anti_crease": {
+                "name": "Anticrease"
+            },
+            "add_dish": {
+                "name": "Add dishes"
+            },
+            "eco_express": {
+                "name": "Eco"
+            },
+            "extra_dry": {
+                "name": "Extra dry"
+            },
+            "half_load": {
+                "name": "Half load"
+            },
+            "open_door": {
+                "name": "Open door"
+            },
+            "three_in_one": {
+                "name": "3 in 1"
+            },
+            "preheat": {
+                "name": "Preheat"
+            },
+            "dish_washer": {
+                "name": "Dish washer"
+            },
+            "tumble_dryer": {
+                "name": "Tumble dryer"
+            },
+            "washing_machine": {
+                "name": "Washing machine"
+            },
+            "washer_dryer": {
+                "name": "Washer dryer"
+            },
+            "oven": {
+                "name": "Oven"
+            },
+            "prewash": {
+                "name": "שטיפה מראש"
+            },
+            "pause": {
+                "name": "Pause"
+            },
+            "keep_fresh": {
+                "name": "Keep Fresh"
+            },
+            "delay_time": {
+                "name": "Delay Start"
+            },
+            "rapid_mode": {
+                "name": "Rapid mode"
+            },
+            "eco_mode": {
+                "name": "ECO mode"
+            },
+            "10_degree_heating": {
+                "name": "10°C Heating function"
+            },
+            "self_clean": {
+                "name": "Self-clean"
+            },
+            "self_clean_56": {
+                "name": "Steri-Clean 56°C"
+            },
+            "silent_mode": {
+                "name": "Silent mode"
+            },
+            "mute_mode": {
+                "name": "Mute mode"
+            },
+            "extra_rinse_1": {
+                "name": "+1 שטיפה"
+            },
+            "extra_rinse_2": {
+                "name": "+2 שטיפות"
+            },
+            "extra_rinse_3": {
+                "name": "+3 שטיפות"
+            },
+            "acqua_plus": {
+                "name": "Acquaplus"
+            },
+            "auto_dose_softener": {
+                "name": "מינון אוטומטי מרכך"
+            },
+            "auto_dose_detergent": {
+                "name": "מינון אוטומטי חומר ניקוי"
+            },
+            "good_night": {
+                "name": "לילה טוב"
+            },
+            "auto_set": {
+                "name": "Auto-Set"
+            },
+            "super_cool": {
+                "name": "Super Cool"
+            },
+            "super_freeze": {
+                "name": "Super Freeze"
+            },
+            "refrigerator": {
+                "name": "Refrigerator"
+            },
+            "night_mode": {
+                "name": "Night mode"
+            },
+            "touch_tone": {
+                "name": "Touch tone volume"
+            },
+            "hygiene": {
+                "name": "היגיינה פלוס"
+            },
+            "hood": {
+                "name": "Hood"
+            }
+        },
+        "binary_sensor": {
+            "door_lock": {
+                "name": "מנעול דלת"
+            },
+            "extra_rinse_1": {
+                "name": "+1 שטיפה"
+            },
+            "extra_rinse_2": {
+                "name": "+2 שטיפות"
+            },
+            "extra_rinse_3": {
+                "name": "+3 שטיפות"
+            },
+            "good_night": {
+                "name": "לילה טוב"
+            },
+            "anti_crease": {
+                "name": "Anticrease"
+            },
+            "acqua_plus": {
+                "name": "Acquaplus"
+            },
+            "spin_speed": {
+                "name": "סיבוב"
+            },
+            "still_hot": {
+                "name": "Still hot"
+            },
+            "pan_status": {
+                "name": "Pan"
+            },
+            "remote_control": {
+                "name": "Remote control"
+            },
+            "rinse_aid": {
+                "name": "Rinse Aid level"
+            },
+            "salt_level": {
+                "name": "Salt level"
+            },
+            "door_open": {
+                "name": "Door open"
+            },
+            "connection": {
+                "name": "Appliance connection"
+            },
+            "child_lock": {
+                "name": "Child Lock"
+            },
+            "on": {
+                "name": "עַל"
+            },
+            "prewash": {
+                "name": "שטיפה מראש"
+            },
+            "buzzer": {
+                "name": "Cycle end chime"
+            },
+            "holiday_mode": {
+                "name": "Holiday Mode"
+            },
+            "auto_set": {
+                "name": "Auto-Set"
+            },
+            "super_cool": {
+                "name": "Super Cool"
+            },
+            "super_freeze": {
+                "name": "Super Freeze"
+            },
+            "freezer_door": {
+                "name": "Door open Freezer"
+            },
+            "fridge_door": {
+                "name": "Door open Fridge"
+            },
+            "filter_replacement": {
+                "name": "Filter replacement"
+            }
+        },
+        "button": {
+            "induction_hob": {
+                "name": "Induction Hob"
+            },
+            "start_program": {
+                "name": "Program Start"
+            },
+            "stop_program": {
+                "name": "Program Stop"
+            }
+        },
+        "number": {
+            "power_management": {
+                "name": "Power management"
+            },
+            "temperature": {
+                "name": "Temperature"
+            },
+            "delay_time": {
+                "name": "Delay Start"
+            },
+            "water_hard": {
+                "name": "קשיות מים"
+            },
+            "program_duration": {
+                "name": "Program duration"
+            },
+            "target_temperature": {
+                "name": "Target temperature"
+            },
+            "rinse_iterations": {
+                "name": "Number of rinses"
+            },
+            "wash_time": {
+                "name": "Washing intensity"
+            },
+            "dry_time": {
+                "name": "זמן ייבוש"
+            },
+            "steam_level": {
+                "name": "מפלס קיטור"
+            },
+            "freezer_temp_sel": {
+                "name": "Target temperature Freezer"
+            },
+            "fridge_temp_sel": {
+                "name": "Target temperature Fridge"
+            },
+            "pollen_level": {
+                "name": "Pollen level"
+            },
+            "aroma_time_on": {
+                "name": "Diffuser (ON)"
+            },
+            "aroma_time_off": {
+                "name": "Diffuser (OFF)"
+            },
+            "my_zone_temp_sel": {
+                "name": "Target temperature My Zone"
+            }
+        },
+        "climate": {
+            "air_conditioner": {
+                "name": "Air conditioner",
+                "state_attributes": {
+                    "preset_mode": {
+                        "name": "Programs",
+                        "state": {
+                            "iot_simple_start": "התחל עכשיו"
+                        }
+                    }
+                }
+            },
+            "fridge": {
+                "name": "Fridge",
+                "state_attributes": {
+                    "preset_mode": {
+                        "name": "Fridge modes",
+                        "state": {
+                            "auto_set": "Auto-Set",
+                            "super_cool": "Super Cool",
+                            "holiday": "Holiday",
+                            "no_mode": "No mode selected"
+                        }
+                    }
+                }
+            },
+            "freezer": {
+                "name": "Freezer",
+                "state_attributes": {
+                    "preset_mode": {
+                        "name": "Freezer modes",
+                        "state": {
+                            "auto_set": "Auto-Set",
+                            "super_freeze": "Super Freeze",
+                            "no_mode": "No mode selected"
+                        }
+                    }
+                }
+            },
+            "oven": {
+                "name": "Oven",
+                "state_attributes": {
+                    "preset_mode": {
+                        "name": "Programs",
+                        "state": {
+                            "iot_h20_clean": "h2O clean",
+                            "pizza": "Pizza",
+                            "tailor_bake": "Tailor bake"
+                        }
+                    }
+                }
+            },
+            "wine": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "name": "Wine Cellar",
+                        "state": {}
+                    }
+                }
+            },
+            "my_zone": {
+                "name": "My Zone"
+            }
+        },
+        "fan": {
+            "air_extraction": {
+                "name": "Air extraction"
+            }
+        },
+        "light": {
+            "light": {
+                "name": "Light"
+            }
+        }
+    },
+    "config": {
+        "step": {
+            "user": {
+                "description": "Do the login",
+                "data": {
+                    "email": "Email",
+                    "password": "Password"
+                }
+            }
+        }
+    }
+}
